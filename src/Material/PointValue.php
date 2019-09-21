@@ -4,10 +4,10 @@ namespace Aura\Material;
 
 interface PointValue
 {
-    public const PAWN = 75;
+    public const PAWN = 100;
     public const KNIGHT = 300;
-    public const BISHOP = 400;
-    public const ROOK = 500;
-    public const QUEEN = 1035;
-    public const KING = 10000;
+    public const BISHOP = 425;
+    public const ROOK = 525;
+    public const QUEEN = 1000;
+    public const KING = 20000;
 }
