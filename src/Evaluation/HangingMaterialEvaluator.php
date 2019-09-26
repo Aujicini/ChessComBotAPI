@@ -13,6 +13,7 @@
 namespace Aura\Evaluator;
 
 use Phoenix\Zero\FourPlayerChess\Utils;
+use Phoenix\Zero\FourPlayerChess\Threat;
 
 /**
  * The hanging material evaluator.
