@@ -10,7 +10,7 @@
  * @license Boost Software License 1.0 <https://www.boost.org/LICENSE_1_0.txt> The license main page.
  */
 
-namespace Aura\Evaluator;
+namespace Aura\Evaluation;
 
 use Phoenix\Zero\FourPlayerChess\Utils;
 use Phoenix\Zero\FourPlayerChess\Threat;
