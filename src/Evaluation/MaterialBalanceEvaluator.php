@@ -1,4 +1,3 @@
-
 <?php declare(strict_types=1);
 /**
  * Aura - A powerful 4 player chess engine.
