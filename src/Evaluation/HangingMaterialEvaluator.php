@@ -29,6 +29,9 @@ final class HangingMaterialEvaluator implements Evaluator
     {
         $sum = 0;
         foreach (Utils::$pieces as $key => $value) {
+            if (!$value) {
+                continue;
+            }
             $color = substr($key, 0, 1);
             $piece = substr($key, 0, 1);
             $location = $value;
@@ -37,7 +40,7 @@ final class HangingMaterialEvaluator implements Evaluator
                 $location = $value[0];
             }
             foreach (Utils::$pieces as $key2 => $value2) {
-                if ($value == $value2) {
+                if ($value == $value2 || !$value2) {
                     continue;
                 }
                 $color2 = substr($key2, 0, 1);
