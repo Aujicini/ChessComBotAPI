@@ -1,8 +1,8 @@
 package javelin
 
 import (
-	"errors"
-	"fmt"
+    "errors"
+    "fmt"
 )
 
 // A Bitboard represents game state.
