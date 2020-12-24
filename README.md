@@ -8,3 +8,4 @@
 ### Pruning Techniques
 - Alpha-Beta Pruning
 - Delta Pruning
+- Mate-Distance Pruning
