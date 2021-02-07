@@ -10,4 +10,5 @@ Yellow Fish is a 4 player chess engnine written in Python. This engine is no whe
 ### Pruning Techniques
 - Alpha-Beta Pruning
 - Delta Pruning
+- Late-Move Reduction
 - Mate-Distance Pruning
