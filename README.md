@@ -3,7 +3,7 @@
 Yellow Fish is a 4 player chess engnine written in Python. This engine is no where as strong as TeamTerminator on chess.com. I made this engine to give me something to do and test out ideas without all of the complicated coding of C, C++, or C#.
 
 ## Search Optimizations
-### Enhancements
+### Basic
 - Iterative Deepening
 - Principle Variation Search
 - Quiesce Search
