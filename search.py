@@ -1,26 +1,40 @@
+#!/usr/bin/env pypy
+# -*- coding: utf-8 -*-
+
+delta_margin=1025
+
 class Search:
     def __init__(self):
+        # Define defualt variables during class construction.
         self.nodes=0
         self.tt_score={}
         self.tt_move={}
 
     def preform(self,pos):
         self.nodes=0
+        # Reset the transposition table score to prevent search instabilities.
         self.tt_score={}
         best_move=()
+        # Increase the depth as we go so search with 1 depth set then 2 then 3 and so on.
+        # This will help the engine preform better move ordering as the depth increases.
         for depth in range(1,1000):
             best=alpha=-infinity
             beta=-alpha
+            # Sort through the moves.
             for move in self.sorted(pos):
                 score=-self.search(pos.move(move),-beta,-alpha,depth-1,1)
+                # Preform AB Pruning.
                 if score>=beta:
                     best_move=move
                     best=score
                     break
+                # If the position is better than the previous one set.
                 if score>best:
                     best_move=move
                     best=score
+                    # Set alpha to the best score if it is outside the bounds.
                     alpha=max(alpha,score)
+            # Yield the best move.
             yield best_move,depth,best
 
     def search(self,pos,alpha,beta,depth=3,ply=1):
