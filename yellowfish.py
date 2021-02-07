@@ -62,7 +62,7 @@ class Search:
     def qsearch(self,pos,alpha,beta,ply):
         self.nodes+=1
         if pos.dead(): return mate-ply
-        score=pos.score+pos.mobility()
+        score=pos.score
         if score>=beta: return beta
         if score<alpha-delta_margin: return alpha
         alpha=max(alpha,score)
