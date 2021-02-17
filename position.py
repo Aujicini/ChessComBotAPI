@@ -1,3 +1,6 @@
+#!/usr/bin/env pypy
+# -*- coding: utf-8 -*-
+
 from collections import namedtuple
 from itertools import count
 
